@@ -1,0 +1,284 @@
+@import url(reset.css);
+
+/* ------------ Title ---------- */
+/* ------------ Hero section (Img + Dropdown list) ---------- */
+
+body{
+    margin: 0 auto;
+    background-color: #daded6;
+    font-family: 'poppins';
+    /* max-width: 1440px; */
+}
+
+/* ------------ Top Nav ---------- */
+
+.header{
+    padding: 0 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #605f4b;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.header-left{
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header a{
+    color: #daded6; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+    text-decoration: none;
+    margin-right: 16px;
+
+}
+
+.header a:hover{
+    color: #c4a37f;
+    
+}
+
+.header-center img{
+    width: 150px;
+    height: auto;
+    flex: 1;
+    text-align: center;
+}
+
+.header-right{
+    flex: 1;
+    gap: 24px;
+    text-align: right;
+}
+
+.icons {
+    text-decoration: none; 
+    color: inherit; 
+    margin-right: 8px;
+
+}
+  
+.icons:hover {
+    color: #c4a37f;
+}
+
+/* ------------ Hero-section ---------- */
+
+.faq-section{
+    padding: 80px 120px;
+    margin: 0 auto;
+   
+}
+  
+.faq-title{
+    font-size: 64px;
+    text-align: left;
+    color: #434233;
+    margin-bottom: 72px;
+    font-weight: bold;
+   
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    
+}
+  
+.faq-container{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    
+}
+
+.faq-image{
+    max-width: 480px;
+}
+
+.faq-image img{
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    
+}
+  
+.faq-questions{
+    flex: 1;
+    
+}
+  
+.faq-category{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+  
+.faq-category h2{
+    font-size: 36px;
+    margin-bottom: 24px;
+    color: #605f4b;
+    padding-bottom: 16px;
+    font-weight: 500;
+    
+}
+
+.faq-item{
+    margin-bottom: 36px;
+}
+  
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 24px 0;
+    color: #434233;
+    
+}
+
+.faq-item{
+    border-bottom: 1px solid #605f4b;
+    
+}
+ 
+.faq-item.open .faq-icon{
+    color:#fff;
+}
+  
+.faq-icon:hover{
+    background-color: #605f4b;
+    
+} 
+  
+.faq-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+    background-color: #939580;
+    border-radius: 8px;
+
+} 
+  
+/* .faq-icon::before{
+    content: ''; 
+}
+  
+.faq-item.open .faq-icon::before {
+    content: '';
+    
+} */
+
+.faq-answer {
+    display: none;
+    padding: 12px 0 24px;
+    color: #605f4b;
+    line-height: 1.4;
+}
+  
+.faq-item.open .faq-answer {
+    display: block;
+}
+ 
+/* ------------ Footer ---------- */
+
+.top{
+    background-color: #605f4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 80px;
+    color:#e4ded2;
+    gap: 48px;
+    border-bottom: 1px solid #727272;
+    
+}
+
+.top .left-section{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+}
+
+.top img{
+    width: 150px;
+    height: auto;
+    flex: 1;
+   
+}
+
+.top .middle-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.middle-section h2{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.middle-section p{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.address-block{
+    margin-bottom: 24px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
+ul a{
+    text-decoration: none;
+    color:#e4ded2;
+    transition: color 0.3s ease;
+
+}
+
+ul a:hover{
+    color:#c4a37f;
+
+}
+
+.bottom{
+    text-align: center;
+    padding: 16px 0;
+    background-color: #434233;
+}
+
+.bottom p{
+    font-size: 14px;
+    color: #e4ded2;
+    padding: 8px 0;
+}
+  

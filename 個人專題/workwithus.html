@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/workwithus.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <title>Work with us</title>
+</head>
+<body>
+   
+    <div class="Out">
+        <!------------ Top Nav ---------->
+        <header class="header">
+                <!-- 左側圖標 -->
+                <div class="header-left">
+                    <a href="aboutus.html">About us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="onlineshop.html">Our Shop</a>
+                    <a href="workwithus.html">Work With Us</a>
+                    <a href="FAQ.html">FAQ</a>
+                </div>
+        
+                <!-- 中間 LOGO 圖片 -->
+                <div class="header-center">
+                    <a href="mainpage.html">
+                        <img src="img/mainlogo-nobg.png" alt="Crank Coffee" class="logo">
+                    </a>
+                </div>
+        
+                <!-- 右側圖標 -->
+                <div class="header-right">
+                    <a href="#" class="icons">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </a>
+                    
+                    <a href="cart.html" class="icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/" class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    
+                </div>
+        </header>
+
+
+<!------------ Hero section (2Imgs + Text ) ---------->
+
+        <div class="hero-section">
+            <h1>Recruiting</h1>
+            <div class="content">
+                <div class="left-content">
+                    <img src="img/recruiting-img1.jpg" alt="" class="left-img">
+                    <img src="img/recruiting-img2.jpg" alt="" class="right-img">
+                </div>
+                <div class="right-content">
+                    <div class="toptext">
+                        <h3>經營理念</h3>
+                        <p>我們希望傳遞「在此放鬆、充電，再次啟程」的生活理念。我們希望創造一個溫馨舒適的空間，無論你是與親友相聚，享受片刻放鬆，還是選擇在這裡工作或讀書，都能感到自在和安心。店內的咖啡與餐點不僅帶來味蕾的享受，更希望能傳遞我們的用心，給你溫暖和親切的體驗。</p>
+                    </div>
+                    <div class="bottomtext">
+                        <h3>夥伴的特質</h3>
+                        <p>我們希望加入Crank的夥伴具備良好的溝通能力、細膩的觀察力，並擁有團隊合作精神。理想的夥伴能向顧客傳遞我們的品牌理念，細心聆聽顧客需求，即使在忙碌時也能保持專注與熱忱，讓每位顧客在這裡享受一杯好咖啡和餐點，真正感受到我們的用心。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+            <!-- 左側表單 -->
+                <div class="form-section">
+                    <h4>應徵申請</h4>
+                    <p>
+                        請填寫表單並點擊「送出」，我們將儘快回覆您。<br>如果在假日收到的申請將於下一個營業日回覆，感謝您的理解。<br>
+                        如果有其他問題，請寄信到 crankcoffee@gmail.com。
+                    </p>
+                    <form>
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" placeholder="請輸入您的姓名">
+                
+                        <label for="birthday">生日</label>
+                        <input type="date" id="birthday" name="birthday">
+                
+                        <label>性別</label>
+                        <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> 男</label>
+                        <label><input type="radio" name="gender" value="female"> 女</label>
+                        </div>
+                
+                        <label for="phone">手機號碼</label>
+                        <input type="tel" id="phone" name="phone" placeholder="請輸入您的手機號碼">
+                
+                        <label for="email">電子信箱</label>
+                        <input type="email" id="email" name="email" placeholder="請輸入您的電子信箱">
+                
+                        <label for="resume">履歷連結</label>
+                        <input type="url" id="resume" name="resume" placeholder="請輸入履歷連結">
+                
+                        <label>應徵類型</label>
+                        <div class="radio-group">
+                        <label><input type="radio" name="type" value="fulltime">正職員工</label>
+                        <label><input type="radio" name="type" value="parttime">兼職員工</label>
+                        </div>
+                
+                        <label for="introduction">自我介紹</label>
+                        <textarea id="introduction" name="introduction" placeholder="請簡單介紹自己"></textarea>
+                
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+        
+            <!-- 右側圖片 -->
+                <div class="image-section">
+                    <img src="img/recruiting-img3.jpg" alt="Coffee making" class="image image-1">
+                    <img src="img/recruiting-img4.jpg" alt="Coffee shop" class="image image-2">
+                    <img src="img/recruiting-img5.jpg" alt="Espresso" class="image image-3">
+                </div>
+            </div>
+        </div>
+<!------------ Form & button + 3Imgs ---------->
+<!------------ Footer ---------->
+        <div class="top">
+            <div class="left-section">
+                <a href="mainpage.html">
+                    <img src="img/mainlogo-nobg.png" alt="Crank Coffee" class="logo">
+                </a>
+                
+                <div class="middle-section">
+                    <div class="address-block">
+                    <h2>Address</h2>
+                    <p>新北市林口區四維路369號</p>
+                    </div>
+                    <div class="hours-block">
+                    <h2>Opening hours</h2>
+                    <p>平日：09:00~18:00</p>
+                    <p>假日：10:00~19:00</p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- 右側導航與社群圖標 -->
+        
+            <ul class="right-section">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="onlineshop.html">Onlineshop</a></li>
+                <li><a href="workwithus.html">Work with us</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    <!-- 底部 -->
+        
+        <div class="bottom">
+            <p>All right reserved 2024 本網站為緯育TibaMe【第94期】前端工程師專業技術養成班學員作品，僅供學習、展示之用途。</p>  
+        </div>
+    </div>  
+</body>
+</html>
+

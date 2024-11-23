@@ -1,0 +1,303 @@
+@import url(reset.css);
+
+/* carousel還沒做！！！！！！！ */
+/* h1 h2寫顛倒 */
+
+body{
+    margin: 0 auto;
+    background-color: #daded6;
+    font-family: 'poppins';
+    /* max-width: 1440px; */
+}
+
+/* ------------ Top Nav ---------- */
+
+.header{
+    padding: 0 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #605f4b;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.header-left{
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header a{
+    color: #daded6; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+    text-decoration: none;
+    margin-right: 16px;
+
+}
+
+.header a:hover{
+    color: #c4a37f;
+    
+}
+
+.header-center img{
+    width: 150px;
+    height: auto;
+    flex: 1;
+    text-align: center;
+}
+
+.header-right{
+    flex: 1;
+    gap: 24px;
+    text-align: right;
+}
+
+.icons {
+    text-decoration: none; 
+    color: inherit; 
+    margin-right: 8px;
+
+}
+  
+.icons:hover {
+    color: #c4a37f;
+}
+
+/* ------------ Carousel ---------- */
+
+.owl-theme{
+    margin-bottom: 80px;
+}
+.owl-theme .item {
+    height: 600px;
+    object-fit: cover;
+    
+    
+}
+  
+  .owl-carousel .item h4 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4375rem;
+    margin-top: 0rem;
+  }
+/* ------------ Img + Text (Store intro) ---------- */
+.page-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: #605f4b;
+    margin-top: 72px;
+    margin-left: 120px;
+    
+}
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 120px;
+    max-width: 100%; 
+    margin: 0 auto;
+    gap: 60px;
+   
+    
+}
+  
+.text-content{
+    flex: 1;
+    padding: 16px;
+
+}
+.text-content h1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #605f4b; 
+}
+   
+.text-content p{
+    font-size: 18px;
+    color: #605f4b;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+  
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+  
+.image-content img {
+    max-width: 600px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 24px;
+}
+/* ------------ Img + Text (Our Philosophy) ---------- */
+
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 120px;
+    max-width: 100%; 
+    margin: 0 auto;
+    gap:60px
+}
+
+.section2 p{
+    font-size: 18px;
+    color: #605f4b;
+    line-height: 1.4;
+}
+
+.section2 img{
+    max-width: 600px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 24px;
+}
+/* ------------ Text list (Store info) ---------- */
+
+.store-info {
+
+    width: 1440px;
+    padding: 80px 120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  
+}
+
+.store-info h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #605f4b;
+    margin-bottom: 64px;
+
+    
+}
+
+.section {
+    padding: 36px 0;
+    border-bottom: 1px solid #939580;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.text {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+
+}
+
+.section h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #605f4b;
+    margin-bottom: 8px;
+    margin-right: 48px;
+}
+
+.section p{
+    font-size: 16px;
+    color: #605f4b;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+/* ------------ Footer ---------- */
+
+.top{
+    background-color: #605f4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 80px;
+    color:#e4ded2;
+    gap: 48px;
+    border-bottom: 1px solid #727272;
+    
+}
+
+.top .left-section{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+}
+
+.top img{
+    width: 150px;
+    height: auto;
+    flex: 1;
+   
+}
+
+.top .middle-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.middle-section h2{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.middle-section p{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.address-block{
+    margin-bottom: 24px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
+ul a{
+    text-decoration: none;
+    color:#e4ded2;
+    transition: color 0.3s ease;
+
+}
+
+ul a:hover{
+    color:#c4a37f;
+
+}
+
+.bottom{
+    text-align: center;
+    padding: 16px 0;
+    background-color: #434233;
+}
+
+.bottom p{
+    font-size: 14px;
+    color: #e4ded2;
+    padding: 8px 0;
+}
+  

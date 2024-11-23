@@ -1,0 +1,308 @@
+@import url(reset.css);
+
+body{
+    margin: 0 auto;
+    background-color: #daded6;
+    font-family: 'poppins';
+    color:#605f4b;
+    /* max-width: 1440px; */
+}
+
+/* ------------ Top Nav ---------- */
+
+.header{
+    padding: 0 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #605f4b;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.header-left{
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header a{
+    color: #daded6; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+    text-decoration: none;
+    margin-right: 16px;
+
+}
+
+.header a:hover{
+    color: #c4a37f;
+    
+}
+
+.header-center img{
+    width: 150px;
+    height: auto;
+    flex: 1;
+    text-align: center;
+}
+
+.header-right{
+    flex: 1;
+    gap: 24px;
+    text-align: right;
+}
+
+.icons {
+    text-decoration: none; 
+    color: inherit; 
+    margin-right: 8px;
+
+}
+  
+.icons:hover {
+    color: #c4a37f;
+}
+
+/* ------------ Cart Section ----------- */
+.cart{
+    max-width: 1200px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2{
+    margin-left: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* 相鄰的表格單元格會共用一條邊框，而不是每個單元格都有自己的獨立邊框，這樣表格看起來更整齊且不會有多餘的空隙。 */
+    margin-bottom: 48px;
+}
+
+th, td{
+    text-align: left;
+    padding: 10px;
+    
+}
+
+td{
+    vertical-align: middle;
+}
+
+th {
+    border-bottom: 2px solid #e4ded2;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 24px;
+   
+}
+
+.product-info p{
+    margin-bottom: 8px;
+}
+
+.product-info img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 24px;
+    vertical-align: middle;
+    border-radius: 12px;
+}
+
+.price, .subtotal {
+    text-align: left;
+    color: #434233;
+    font-size: 18px;
+    font-weight: 500;
+}
+  
+.quantity-input {
+    width: 40px;
+    padding: 4px;
+    outline: 0;
+}
+
+.quantity-input:focus{
+    border: 2px solid #a67654;
+
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color:#daded6;
+    font-size: 18px;
+    
+}
+
+.remove-btn:hover{
+    color: rgb(251, 37, 37);
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding: 12px 8px;
+    border: 1px solid #daded6;
+    border-radius: 8px;
+    resize: none;
+}
+
+textarea:focus{
+    outline: 0;
+    border: 2px solid #a67654;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #daded6;
+    padding-top: 24px;
+}
+
+.cart-footer p {
+    font-size: 24px;
+    font-weight: bold;
+    color:#434233;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    display: block;
+    text-decoration: none;
+    color: #605f4b;
+
+}
+
+.btn:hover {
+    background: #daded6;
+}
+
+.continue-btn {
+    border: 1px solid #434233;
+    color: #434233;
+    
+}
+
+.checkout-btn {
+    color: white;
+    background: #605f4b;
+
+}
+
+.checkout-btn:hover{
+    color: #434233;
+    border: 1px solid #434233;
+}
+
+  /* ------------ Footer ---------- */
+
+  .top{
+    background-color: #605f4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 80px;
+    color:#e4ded2;
+    gap: 48px;
+    border-bottom: 1px solid #727272;
+    
+}
+
+.top .left-section{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+}
+
+.top img{
+    width: 150px;
+    height: auto;
+    flex: 1;
+   
+}
+
+.top .middle-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.middle-section h2{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.middle-section p{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.address-block{
+    margin-bottom: 24px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
+ul a{
+    text-decoration: none;
+    color:#e4ded2;
+    transition: color 0.3s ease;
+
+}
+
+ul a:hover{
+    color:#c4a37f;
+
+}
+
+.bottom{
+    text-align: center;
+    padding: 16px 0;
+    background-color: #434233;
+}
+
+.bottom p{
+    font-size: 14px;
+    color: #e4ded2;
+    padding: 8px 0;
+}
+  

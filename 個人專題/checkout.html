@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <title>Checkout</title>
+   
+</head>
+
+<body>
+    
+    <div class="Out">
+
+    <!------------ Top Nav ---------->
+        <header class="header">
+            <!-- 左側圖標 -->
+            <div class="header-left">
+                <a href="aboutus.html">About us</a>
+                <a href="menu.html">Menu</a>
+                <a href="onlineshop.html">Our Shop</a>
+                <a href="workwithus.html">Work With Us</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+    
+            <!-- 中間 LOGO 圖片 -->
+            <div class="header-center">
+                <a href="mainpage.html">
+                    <img src="img/mainlogo-nobg.png" alt="Crank Coffee" class="logo">
+                </a>
+            </div>
+    
+            <!-- 右側圖標 -->
+            <div class="header-right">
+                <a href="#" class="icons">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </a>
+                
+                <a href="cart.html" class="icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/" class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+            </div>
+        </header>
+
+    <!----------- checkout ---------->
+    <div class="checkout-page">
+        <!-- 左側：購物資訊 -->
+        <div class="checkout-info">
+            <h2>購物資訊</h2>
+            <form id="checkout-form">
+            <!-- 姓名 -->
+            <div class="form-group">
+                <label for="first-name">收件人姓名</label>
+                <div class="name-fields">
+                    <input type="text" id="first-name" placeholder="姓" required>
+                    <input type="text" id="last-name" placeholder="名" required>
+                </div>
+            </div>
+    
+            <!-- 手機號碼 -->
+            <div class="form-group">
+                <label for="phone">收件人手機號碼</label>
+                <input type="tel" id="phone" placeholder="+886" required>
+            </div>
+    
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">電子信箱</label>
+                <input type="email" id="email" placeholder="example@mail.com" required>
+            </div>
+    
+            <!-- 地址 -->
+            <div class="form-group">
+                <label for="city">縣市 / 區域</label>
+                <div class="location-fields">
+                    <select id="city" required>
+                        <option value="" disabled selected>選擇縣市</option>
+                    </select>
+                    <select id="district" required>
+                        <option value="" disabled selected>選擇區域</option>
+                    </select>
+                </div>
+            </div>
+              
+            <div class="form-group">
+                <label for="address-details">地址細節</label>
+                <input type="text" id="address-details" placeholder="請輸入詳細地址" required>
+            </div>
+              
+            
+            <!-- 付款方式 -->
+            <div class="form-group">
+                <label>付款方式</label>
+                <div class="payment-methods">
+                    <label>
+                        <input type="radio" name="payment-method" value="credit-card" required>信用卡</label>
+                    <label>
+                        <input type="radio" name="payment-method" value="line-pay">Line Pay</label>
+                </div>
+            </div>
+
+            <!-- 信用卡輸入欄位 -->
+            <div id="credit-card-fields" class="payment-fields hidden">
+                <div class="form-group">
+                    <label for="card-number">信用卡卡號</label>
+                    <input type="text" id="card-number" placeholder="請輸入你的信用卡號" maxlength="19">
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">有效期限</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">安全碼</label>
+                    <input type="text" id="cvv" placeholder="CVV" maxlength="3">
+                    </div>
+            </div>
+        
+            <!-- Line Pay 輸入欄位 -->
+            <div id="line-pay-fields" class="payment-fields hidden">
+            </div>
+
+            <!-- 運送方式 -->
+            <div class="form-group">
+                <label>取貨方式</label>
+                <div class="radio-groups">
+                <label><input type="radio" name="shipping" value="全家超商取貨" required>全家超商取貨</label>
+                <label><input type="radio" name="shipping" value="7-11超商取貨">7-11超商取貨</label>
+                <label><input type="radio" name="shipping" value="郵寄">郵寄</label>
+                </div>
+            </div>
+
+            </form>
+        </div>
+    
+        
+    
+        <!-- 右側：商品摘要 -->
+        <div class="checkout-summary">
+           <div class="cart-items">
+            
+            <div class="cart-item">
+                <img src="img/chopin.png" alt="Product 2">
+                <div class="cart-item-info">
+                  <p>哥斯大黎加 卡內特 音樂家系列 蕭邦</p>
+                  <p>Musician Series Chopin</p>
+                </div>
+                <span>$720</span>
+              </div>
+            <div class="cart-item">
+              <img src="img/Kiamwangi.png" alt="Product 2">
+              <div class="cart-item-info">
+                <p>肯亞 冽里 卡穆旺吉 AA TOP</p>
+                <p>Kiamwangi AA Top</p>
+              </div>
+              <span>$640</span>
+            </div>
+           </div>
+           <div class="summary-totals">
+            <div class="subtotal">
+              <span>小計</span>
+              <span>NT$ <span id="subtotal">1360</span></span>
+            </div>
+            <div class="discount-code">
+              <input type="text" id="discount-code" placeholder="折扣碼">
+              <button id="apply-discount">套用</button>
+            </div>
+            <div class="discount">
+              <span>折扣</span>
+              <span>NT$ <span id="discount">0</span></span>
+            </div>
+            <div class="total">
+              <span>總計</span>
+              <span>NT$ <span id="total">1360</span></span>
+            </div>
+           </div>
+           
+           <div class="checkout-button-container">
+            <button class="checkout-button">確認結帳</button>
+        </div>
+        </div>
+
+
+    </div>
+
+    <!------------ Footer ---------->
+    
+        <div class="top">
+            <div class="left-section">
+                <a href="mainpage.html">
+                    <img src="img/mainlogo-nobg.png" alt="Crank Coffee" class="logo">
+                </a>
+                
+                <div class="middle-section">
+                    <div class="address-block">
+                    <h2>Address</h2>
+                    <p>新北市林口區四維路369號</p>
+                    </div>
+                    <div class="hours-block">
+                    <h2>Opening hours</h2>
+                    <p>平日：09:00~18:00</p>
+                    <p>假日：10:00~19:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右側導航與社群圖標 -->
+            
+            <ul class="right-section">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="onlineshop.html">Onlineshop</a></li>
+                <li><a href="workwithus.html">Work with us</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+            
+        <div class="bottom">
+            <p>All right reserved 2024 本網站為緯育TibaMe【第94期】前端工程師專業技術養成班學員作品，僅供學習、展示之用途。</p>  
+        </div>
+    </div>
+
+<script src="JS/checkout.js"></script>
+
+</body>
+</html>
