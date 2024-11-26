@@ -5,7 +5,7 @@
 body{
     margin: 0 auto;
     background-color: #daded6;
-    font-family: 'poppins','GenSenRounded2 TW', 'Noto Sans TC';
+    font-family: 'poppins';
     color:#605f4b;
     line-height: 1.4;
     
@@ -83,6 +83,7 @@ body{
     width: 20%;
     background-color: #dfe4d8;
     padding: 20px;
+    font-family: 'GenSenRounded2 TW', 'Noto Sans TC';
 }
 
 .product-list {
@@ -113,6 +114,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: left;
+    font-family: 'GenSenRounded2 TW', 'Noto Sans TC';
 }
 
 .product-content {
@@ -263,6 +265,7 @@ input:focus{
     flex-direction: row;
     gap: 36px;
     margin: 24px auto;
+    font-family: 'GenSenRounded2 TW', 'Noto Sans TC';
 }
 
 .notice{
@@ -344,7 +347,7 @@ input:focus{
     margin-bottom: 24px;
 }
 
-ul{
+.right-section ul{
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -98,6 +98,10 @@ body{
     
 }
 
+select, input {
+    font-family: 'GenSenRounded2 TW', 'Noto Sans TC';
+}
+
 .form-group label {
     display: block;
     font-weight: bold;

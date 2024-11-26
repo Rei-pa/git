@@ -166,6 +166,7 @@ textarea {
     border: 1px solid #daded6;
     border-radius: 8px;
     resize: none;
+    font-family: 'GenSenRounded2 TW', 'Noto Sans TC';
 }
 
 textarea:focus{
