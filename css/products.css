@@ -160,6 +160,7 @@ body{
 .line h3{
     font-weight: 400;
     color: #434233;
+    width: 48px;
 }
 
 .product-info ul {
