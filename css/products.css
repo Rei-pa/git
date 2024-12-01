@@ -126,7 +126,9 @@ body{
     flex: 1;
     width: 100%;
     max-width: 360px;
+    height: 320px;
     border-radius: 24px;
+    object-fit: cover;
 }
 
 .product-image h2 {
@@ -151,7 +153,6 @@ body{
     flex: row;
     width: 100%;
     gap: 16px;
-    margin-bottom: 24px;
     border-bottom: 1px solid #605f4b;
     
 }
@@ -296,6 +297,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     list-style: disc;
+    gap: 4px;
 }
 
 /* ------------ Footer ---------- */
@@ -347,11 +349,12 @@ input:focus{
     margin-bottom: 24px;
 }
 
-.right-section ul{
+ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    gap: 0;
+    
 }
 
 

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/products.css">
-    <title>Products</title>
+    <title>哥斯大黎加 音樂家系列 蕭邦</title>
 </head>
 <body>
     
@@ -42,7 +42,7 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                     
-                    <a href="https://www.instagram.com/" class="icons">
+                    <a href="https://www.instagram.com/" class="icons" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brandmainpage.htms fa-instagram"></i>
                     </a>
                     
@@ -55,10 +55,11 @@
             <aside class="sidebar">
               <h1 class="product-list">Coffeebean</h1>
               <nav class="menu">
-                <a href="#">哥斯大黎加 音樂家系列 蕭邦</a>
-                <a href="#">哥斯大黎加 蜜娜祖莊園 酒桶靜置 </a>
-                <a href="#">肯亞 冽里卡穆旺吉 AA TOP </a>
-                <a href="#">衣索比亞 古吉 烏拉嘎 所羅門 G1</a>
+                <a href="products.html?id=0">The Barn 瓜地馬拉 弗雷哈內斯</a>
+                <a href="products.html?id=1" data-id="1">哥斯大黎加 音樂家系列 蕭邦</a>
+                <a href="products.html?id=1" data-id="2">哥斯大黎加 蜜娜祖莊園 酒桶靜置 </a>
+                <a href="products.html?id=1" data-id="3">肯亞 冽里卡穆旺吉 AA TOP </a>
+                <a href="products.html?id=1" data-id="4">衣索比亞 古吉 烏拉嘎 所羅門 G1</a>
               </nav>
             </aside>
         
@@ -67,32 +68,32 @@
               <div class="product-content">
                 <!-- 產品圖 -->
                 <div class="product-image">
-                  <img src="img/chopin.png" alt="Musician Series Chopin">
+                  <img id="product-image" src="img/chopin.png" alt="Musician Series Chopin">
                 </div>
         
                 <!-- 商品資訊 -->
                 <div class="product-info">
-                  <h2>哥斯大黎加 卡內特 音樂家系列 蕭邦</h2>
-                  <ul class="details">
+                  <h2 id="product-title">哥斯大黎加 卡內特 音樂家系列 蕭邦</h2>
+                  <ul class="details" id="product-details">
                     <div class="line">
                         <li><h3>產地</h3></li>
-                        <li><p>哥斯大黎加</p></li>
+                        <li><p id="product-origin">哥斯大黎加</p></li>
                     </div>
                     <div class="line">
                         <li><h3>產區</h3></li>
-                        <li><p>塔拉薩</p></li>
+                        <li><p id="product-region">塔拉薩</p></li>
                     </div>
                     <div class="line">
                         <li><h3>烘焙度</h3></li>
-                        <li><p>淺烘焙</p></li>
+                        <li><p id="product-roast">淺烘焙</p></li>
                     </div>
                     <div class="line">
                         <li><h3>處理法</h3></li>
-                        <li><p>葡萄乾蜜處理</p></li>
+                        <li><p id="product-process">葡萄乾蜜處理</p></li>
                     </div>
                     <div class="line">
                         <li><h3>風味</h3></li>
-                        <li><p>奶油味、蜂蜜味、咖啡花味、檸檬柑橘味、蘋果味</p></li>
+                        <li><p id="product-flavor">奶油味、蜂蜜味、咖啡花味、檸檬柑橘味、蘋果味</p></li>
                     </div>
                     
                   </ul>
@@ -163,7 +164,7 @@
                 <li><a href="onlineshop.html">Onlineshop</a></li>
                 <li><a href="workwithus.html">Work with us</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://www.instagram.com/">
+                <li><a href="https://www.instagram.com/" class="icons" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
@@ -176,6 +177,7 @@
             <p>All right reserved 2024 本網站為緯育TibaMe【第94期】前端工程師專業技術養成班學員作品，僅供學習、展示之用途。</p>  
         </div>
 
+    <script src="js/products.js"></script>
         
 </body>
 </html>

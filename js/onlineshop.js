@@ -14,3 +14,13 @@ $(".owl-carousel").owlCarousel({
       }
     }
   });
+
+  document.querySelectorAll(".shop-button").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+  
+      const productId = button.getAttribute("data-id");
+      window.location.href = `product.html?id=${productId}`;
+    });
+  });
+  

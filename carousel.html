@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <title>Owl Carousel Autoplay Example</title>
+  <style>
+    .owl-carousel .item img {
+      transition: transform 0.5s ease; /* 設置放大的過渡效果 */
+    }
+
+    .owl-carousel .owl-item.active img {
+      transform: scale(1.1); /* 當幻燈片處於活躍狀態時，放大 10% */
+    }
+  </style>
+</head>
+<body>
+
+<div class="owl-carousel">
+  <div class="item"><img src="img/hero-img1.jpg" alt="Image 1"></div>
+  <div class="item"><img src="img/hero-img2.jpg" alt="Image 2"></div>
+  <div class="item"><img src="img/andrea-huls-pareja-eLcMlNAOzVI-unsplash.jpg" alt="Image 3"></div>
+  <div class="item"><img src="img/hero-img4.jpg" alt="Image 4"></div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: true,
+    animateOut: 'animate__fadeOut',   // 使用淡出效果
+    animateIn: 'animate__fadeIn',     // 使用淡入效果
+    smartSpeed: 2000,
+
+  });
+});
+</script>
+
+</body>
+</html>
