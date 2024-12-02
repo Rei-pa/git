@@ -24,7 +24,7 @@ function renderProduct(productId) {
     {
       id: 1,
       title: "哥斯大黎加 卡內特 音樂家系列 蕭邦",
-      image: "img/chopin.png",
+      image: "img/product1.jpeg",
       origin: "哥斯大黎加",
       region: "塔拉薩",
       roast: "淺烘焙",
@@ -34,7 +34,7 @@ function renderProduct(productId) {
     {
       id: 2,
       title: "哥斯大黎加 蜜娜祖莊園 酒桶靜置",
-      image: "img/mirazu.png",
+      image: "img/product2.jpeg",
       origin: "哥斯大黎加",
       region: "蜜娜祖莊園",
       roast: "淺焙",
@@ -44,7 +44,7 @@ function renderProduct(productId) {
     {
       id: 3,
       title: "肯亞 冽里卡穆旺吉 AA TOP",
-      image: "img/wangi.png",
+      image: "img/product3.jpeg",
       origin: "肯亞",
       region: "冽里",
       roast: "淺焙",
@@ -54,7 +54,7 @@ function renderProduct(productId) {
     {
       id: 4,
       title: "衣索比亞 古吉 烏拉嘎 所羅門 G1",
-      image: "img/guji.png",
+      image: "img/product4.jpeg",
       origin: "衣索比亞",
       region: "古吉",
       roast: "淺焙",

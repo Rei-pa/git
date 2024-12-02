@@ -107,6 +107,10 @@ th {
     border-bottom: 2px solid #e4ded2;
 }
 
+.table-subtotal{
+    width: 100px;
+}
+
 .product-info {
     display: flex;
     align-items: center;

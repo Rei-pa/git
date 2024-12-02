@@ -20,7 +20,7 @@ $(".owl-carousel").owlCarousel({
       event.preventDefault();
   
       const productId = button.getAttribute("data-id");
-      window.location.href = `product.html?id=${productId}`;
+      window.location.href = `products.html?id=${productId}`;
     });
   });
   
