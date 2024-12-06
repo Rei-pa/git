@@ -1,0 +1,190 @@
+ /* Tablet (width: 820px and below) */
+@media screen and (max-width: 820px) {
+    .hero-section {
+        padding: 40px 60px; /* 減少內邊距 */
+    }
+
+    .hero-section h1 {
+        font-size: 48px;
+        margin-bottom: 80px;
+
+    }
+
+    .content {
+        flex-direction: column; /* 改為垂直排列 */
+        height: auto; /* 自動高度 */
+        gap: 24px; /* 增加內容區塊間距 */
+    }
+
+    .left-content {
+        flex: unset;
+        display: flex;
+        justify-content: center; /* 圖片置中 */
+        gap: 48px; /* 增加圖片間距 */
+        position: static; /* 重置定位 */
+        margin-bottom: 80px;
+    }
+
+    .left-content img {
+        height: auto;
+        position: static; /* 重置圖片定位 */
+        border-radius: 16px; /* 減少圓角 */
+    }
+
+    .right-content {
+        text-align: center; /* 文本置中 */
+        flex: unset;
+        margin-bottom: 80px;
+    }
+
+    .left-content .left-img{
+        width: 48%;
+    }
+
+    .left-content .right-img{
+        width: 48%;
+        transform: translateY(11%);
+    }
+
+    .right-content h3 {
+        font-size: 28px;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    .right-content p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .container {
+        flex-direction: column; /* 改為垂直排列 */
+    }
+
+    .form-section {
+        padding: 28px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /* .image-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        position: static;
+    }
+
+    .image {
+        position: static;
+        width: 30%;
+        height: auto;
+        border-radius: 16px; 
+    } */
+
+    .image-section{
+        display: none;
+    }
+}
+
+/* Mobile (width: 430px and below) */
+@media screen and (max-width: 430px) {
+    .hero-section {
+        padding: 24px 16px; /* 減少內邊距 */
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+
+    .content {
+        flex-direction: column; /* 垂直排列 */
+        gap: 16px; /* 減少間距 */
+        height: auto; /* 自動高度 */
+    }
+
+    .left-content {
+        flex-direction: row; /* 改為垂直排列圖片 */
+        gap: 24px; /* 圖片間距減少 */
+        justify-content: center; /* 圖片置中 */
+        margin-bottom: 48px;
+    }
+
+    .left-content img {
+        width: 100%; /* 圖片全寬 */
+        height: auto; /* 保持圖片比例 */
+        border-radius: 12px; /* 圓角減少 */
+        overflow: hidden;
+    }
+
+    .left-content .left-img {
+        width: 50%;
+    }
+
+    .left-content .right-img {
+        width: 50%;
+    }
+
+    .right-content {
+        
+        margin-bottom: 48px;
+    }
+
+    .right-content h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+        text-align: left;
+    }
+
+    .right-content p {
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .toptext {
+        margin-bottom: 24px;
+    }
+
+    .form-section h4 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    .form-section p {
+        font-size: 12px;
+    }
+
+    .form-section {
+        padding: 24px;
+        margin: 0;
+        width: auto;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input, form textarea {
+        padding: 12px 16px; /* 減少表單內邊距 */
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .image-section {
+        flex-direction: column; /* 圖片垂直排列 */
+        gap: 12px; /* 減少圖片間距 */
+    }
+
+    .image {
+        width: 100%; /* 圖片全寬 */
+        height: auto; /* 保持圖片比例 */
+        border-radius: 12px; /* 圓角減少 */
+    }
+
+    button {
+        width: 100%; /* 按鈕全寬 */
+        font-size: 14px;
+        height: 36px;
+    }
+}

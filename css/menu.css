@@ -6,6 +6,7 @@ body{
     margin: 0 auto;
     background-color: #daded6;
     font-family: 'poppins','GenSenRounded2 TW', 'Noto Sans TC';
+    color:#434233;
     
 }
 
@@ -67,41 +68,29 @@ body{
 .icons:hover {
     color: #c4a37f; /* 可選：添加懸停效果 */
 }
-  
-
-/* i{
-    color: #daded6; 
-    font-size: 20px; 
-    margin: 0 8px;
-    transition: color 0.3s ease;
-}
-  
-i:hover {
-    color: #c4a37f;
-} */
 
 /* ------------ Title + hero img ---------- */
 
 .hero-section{
     max-width: 100%;
     position: relative;
-    height: 1000px;
+    height: 80vw;
     margin: 0 auto;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     
 }
 
 .hero-section h2{
-    position: absolute;
+    
     font-size: 64px;
     font-weight: bold;
     top: 90px;
     left: 110px;
     color: #434343;
-    margin: 0;
-    box-sizing: border-box;
+    margin-top: 60px;
+    margin-left: 120px;
     
 }
 
@@ -116,7 +105,6 @@ i:hover {
     left: 200px;
     width: 100%;
     box-sizing: border-box;
-    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 
 }
 
@@ -126,39 +114,35 @@ i:hover {
 }
 
 .p1{
-    width: 320px;
-    height: 270px;
+    width: 32vw;
+    height: 24vw;
     object-position: bottom right;
-    align-self: end; /* 垂直底部對齊 */
-    justify-self: end; /* 水平底部對齊 */
+    align-self: end; 
+    justify-self: end; 
     border-radius: 24px 24px 0 24px;
-    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)
     
 }
 
 .p2{
-    width: 485px;
-    height: 415px;
+    width: 43vw;
+    height: 32vw;
     border-radius: 24px 24px 24px 0;
-    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)
-       
+      
 }
 
 .p3{
-    width: 500px;
-    height: 387px;
-    
+    width: 38vw;
+    height: 28vw;
     justify-self: end;
     border-radius: 24px 0 24px 24px;
-    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)
-
+   
 }
 
 .p4{
-    width: 340px;
-    height: 275px;
+    width: 34vw;
+    height: 24vw;
     border-radius: 0 24px 24px 24px;
-    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1)
+
 }
 
 .menu-img img{
@@ -168,25 +152,30 @@ i:hover {
 
 }
 
-/* .menu-img img:hover{
-    transform: translateY(-8px);
+/* ------------ Switch tab (3types) + Menu ---------- */
+
+.menu-section{
+    margin-top: 100px;
 }
 
-.menu-img img:hover{
-    transform: scale(1.25);
-    object-fit: cover;
-} */
+.menu-section h1{
+    padding: 60px 120px 0px;
+    font-size: 64px;
+    font-weight: bold;
+    transition: color 0.1s linear;
 
-/* ------------ Switch tab (3types) + Menu ---------- */
+}
 
 .menu-container{
     padding: 80px 120px;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 60px;
     max-width: 100%;
     margin: 0 auto;
-
+    background-color: #daded6; /* 預設背景顏色 (Coffee) */
+    color: #605f4b; /* 預設字體顏色 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 平滑切換 */
 }
 
 .menu-container h1{
@@ -198,51 +187,91 @@ i:hover {
 
 .menu-layout{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 60px;
+    position: relative;
+    
 }
 
 .menu-tabs{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    flex: 1;
+    position: sticky; 
+    top: 50px; 
+    align-self: flex-start; 
+    z-index: 10; 
+    background-color: inherit; 
+
 }
 
-.menu-tabs .tab{
+ .tab{
     display: block;
     width: 240px;
     padding: 8px 8px 24px;
+    margin-bottom: 48px;
     border-bottom: 1px solid #605f4b;
     font-size: 18px;
     font-weight: normal;
-    color: #605f4b;
+    /* color: #605f4b; */
     text-decoration: none;
+    transition: color 0.3s ease;
+    color: inherit; /* 繼承父容器的字體顏色 */
+    transition: transform 0.2s ease, color 0.3s ease;
 }
 
 
-.menu-tabs .tab:hover{
+.tab:hover{
     color: #c4a37f;
 }
 
-.menu-tabs .tab.active{
+.tab.active{
     font-weight: bold;
     color: #434343;
+    transform: scale(1.1);
 }
 
-.menu-content{
-    flex: 3;
+.menu-content {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+.menu-section, 
+.menu-container {
+    transition: background-color 0.1s linear, color 0.1s linear; /* 確保同步過渡 */
+}
+/* 每個菜單內容 */
+.menu-category {
+    display:none;
+    width: 100%;
+    transition: background-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+}
+
+.menu-category.active {
+    display: block;
+    
+}
+
+.section{
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
 
 }
 
-.section-title{
-    margin-top: 24px;
+#beer .item-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
 
 .menu-category h2{
     font-size: 36px;
-    color: #605f4b;
+    /* color: #605f4b; */
     font-weight: bold;
+    
     margin-bottom: 16px;
 }
 
@@ -250,59 +279,45 @@ i:hover {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 24px;
     align-items: start;
+    width: 100%;
+    margin-bottom: 80px;
     
 
 }
-    
+
 .menu-category li{
     
     display:flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 28px 0;
-    border-bottom: 1px solid #605f4b;
+    padding: 12px 0 36px;
+    border-bottom: 1px solid var(--border-color, #605f4b);
+    transition: border-color 0.3s ease; 
 }
 
-/* li:nth-child(8){
-    border: none;
-}
-
-li:nth-child(12){
-    border: none;
-}
-
-li:nth-child(17){
-    border: none;
-} */
 
 .item-name{
     font-size: 18px;
     font-weight: 500;
-    color: #434233;
+    /* color: #434233; */
     font-family: 'GenSenRounded2 TW', 'Noto Sans TC';
     letter-spacing: 1px;
 }
-  
+
   
 .item-price{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
-    color: #605F4B;
+    /* color: #605F4B; */
 }
-
-/* .item-degree{
-    font-size: 14px;
-    font-weight: 300;
-    color: #605F4B;
-} */
 
 .item-content{
     font-size: 14px;
     font-weight: 400;
-    color: #605F4B;
+    /* color: #605F4B; */
     
 }
 

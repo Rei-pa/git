@@ -75,9 +75,16 @@ body{
     margin-bottom: 80px;
 }
 .owl-theme .item {
-    height: 600px;
+    
     object-fit: cover;
     
+}
+
+.owl-dots{
+    margin-top: 24px;
+}
+.owl-theme .owl-nav {
+    display: none;
 }
   
   .owl-carousel .item h4 {

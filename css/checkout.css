@@ -167,6 +167,19 @@ input:focus, select:focus{
     font-size: 14px;
 }
 
+.card-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+
+}
+
+.card-icons img{
+    width: 36px;
+    height: 24px;
+}
+
 .payment-methods {
     display: flex;
     flex-direction: column;

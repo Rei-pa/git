@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mainpage.css">
-    <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/rwd-index.css">
 
     <!-- owl.carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    </link>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -19,14 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <title>Mainpage</title>
-    <!-- font icon insert unfinished -->
+    
 </head>
 <body>
     
     <div class="Out">
-    
-    
-   
+
     <!------------ Top Nav ---------->
         <header class="header">
             <!-- 左側圖標 -->
@@ -62,42 +59,38 @@
             </div>
         </header>
 
-
     <!------------ Carousel ---------->
         
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-          <img src="img/hero-img1.jpg" alt="">
-        </div>
-        <div class="item">
-          <img src="img/hero-img2.jpg" alt="">
-        </div>
-        <div class="item">
-          <img src="img/hero-img3.png" alt="">
-        </div>
+    <div class="owl-carousel">
+        <div class="item"><img src="img/hero-img1.jpg" alt="Image 1"></div>
+        <div class="item"><img src="img/hero-img2.jpg" alt="Image 2"></div>
+        <div class="item"><img src="img/hero-img3.png" alt="Image 3"></div>
     </div>
     
-        
     <!------------ Main Section  ---------->
          <section class="container">
             <!-- Img -->
-            <div class="image main-img1"><img src="img/main-img-1.jpg" alt="main-img1"></div>
-            <div class="image main-img2"><img src="img/main-img-2.jpg" alt="main-img2"></div>
-            <div class="image main-img3"><img src="img/main-img-3.jpg" alt="main-img3"></div>
-            <div class="image main-img4"><img src="img/main-img-4.jpg" alt="main-img4"></div>
-            <div class="image main-img5"><img src="img/main-img-5.jpg" alt="main-img5"></div>
-            <div class="image main-img6"><img src="img/main-img-6.jpg" alt="main-img6"></div>
-
+            <div class="top-img">
+                <div class="image main-img1"><img src="img/main-img-1.jpg" alt="main-img1"></div>
+                <div class="image main-img2"><img src="img/main-img-2.jpg" alt="main-img2"></div>
+                <div class="image main-img3"><img src="img/main-img-3.jpg" alt="main-img3"></div>
+            </div>
+            
+            <div class="content">
+              <p>
+                藉由Crank咖啡廳作為與生活的驅動動力之一，每一個人在追求目標的旅程中，都需要一個能讓自己沈澱心情、重新整理再出發的地方，希望我們可以成為這樣的存在，透過用心製作咖啡與甜點，讓每位客人感受到滿滿能量，邁出下一步，向理想目標更近一點。
+              </p>
+            </div>
+            
+            <div class="bottom-img">
+                <div class="image main-img4"><img src="img/main-img-4.jpg" alt="main-img4"></div>
+                <div class="image main-img5"><img src="img/main-img-5.jpg" alt="main-img5"></div>
+                <div class="image main-img6"><img src="img/main-img-6.jpg" alt="main-img6"></div>
+            </div>
             <!-- <img src="img/illustration.png" class="illustration hidden" alt="Illustration 1">
             <img src="img/illustration.png" class="illustration hidden" alt="Illustration 2">
             <img src="img/illustration.png" class="illustration hidden" alt="Illustration 3"> -->
-        
-            <!-- Text -->
-            <div class="content">
-              <p>
-                CRANK是咖啡與生活的驅動核心。我們相信，每一個人在追求目標的旅程中，都需要一個能讓心靈重新啟動、力量得以傳遞的地方。我們的咖啡廳希望可以成為這樣的存在，透過精心製作的咖啡與甜點，讓每一位客人感受到能量的補充，啟發他們踏出下一步，向夢想更近一點。
-              </p>
-            </div>
+    
         </section>
 
   
@@ -136,16 +129,18 @@
             
             <ul class="product-list">
                 <li class="product-card">
-                    <div class="imgtext">
-                        <img src="img/product1.png" alt="Musician Series Chopin" class="product-image">
-                        <h2>Musician Series Chopin</h2>
+                    <div class="img-container">
+                        <a href="products.html?id=1" data-id="1">
+                            <img src="img/product1.jpeg" alt="Musician Series Chopin" class="product-image">
+                            
+                        </a>
                     </div>
                     
                     <div class="card-bottom">
-                        <p><a class="link-block" href="products.html">哥斯大黎加 卡內特 音樂家系列 蕭邦</a></p>
+                        <p><a class="link-block" href="products.html?id=1" data-id="1">哥斯大黎加 卡內特 音樂家系列 蕭邦</a></p>
                         <div class="fill-button">
                             <span class="fill"></span>
-                            <a class="shop-button" href="products.html">
+                            <a class="shop-button" href="products.html?id=1" data-id="1">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div> 
@@ -153,15 +148,16 @@
                 </li>
 
                 <li class="product-card">
-                    <div class="imgtext">
-                        <img src="img/product1.png" alt="Guji Uraga Solomo G1" class="product-image">
-                        <h2>Guji Uraga Solomo G1</h2>
+                    <div class="img-container">
+                        <a href="products.html?id=3" data-id="3">
+                            <img src="img/product3.jpeg" alt="Guji Uraga Solomo G1" class="product-image">
+                        </a>
                     </div>
                     <div class="card-bottom">
-                        <p><a class="link-block" href="products.html">衣索比亞 古吉 烏拉嘎 所羅門 日曬 G1</a></p>
+                        <p><a class="link-block" href="products.html?id=4" data-id="4">衣索比亞 古吉 烏拉嘎 所羅門 日曬 G1</a></p>
                         <div class="fill-button">
                             <span class="fill"></span>
-                            <a class="shop-button" href="products.html">
+                            <a class="shop-button" href="products.html?id=4" data-id="4">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div> 
@@ -169,15 +165,16 @@
                 </li>
 
                 <li class="product-card">
-                    <div class="imgtext">
-                        <img src="img/product1.png" alt="Mirazu D’cafetal" class="product-image">
-                        <h2>Mirazu D’cafetal</h2>
+                    <div class="img-container">
+                        <a href="products.html?id=2" data-id="2">
+                        <img src="img/product2.jpeg" alt="Mirazu D’cafetal" class="product-image">
+                        </a>
                     </div>
                     <div class="card-bottom">
-                        <p><a class="link-block" href="products.html">哥斯大黎加 蜜娜祖莊園 酒桶靜置 葡萄乾蜜處理</a></p>
+                        <p><a class="link-block" href="products.html?id=2" data-id="2">哥斯大黎加 蜜娜祖莊園 酒桶靜置 葡萄乾蜜處理</a></p>
                         <div class="fill-button">
                             <span class="fill"></span>
-                            <a class="shop-button" href="products.html">
+                            <a class="shop-button" href="products.html?id=2" data-id="2">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div> 
@@ -232,7 +229,23 @@
 </div>
 
 <script src="js/mainpage.js"></script>
-
+<script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: true,
+        animateOut: 'animate__fadeOut',   // 使用淡出效果
+        animateIn: 'animate__fadeIn',     // 使用淡入效果
+        smartSpeed: 2000,
+    
+      });
+    });
+</script>
 
 </body>
 </html>
