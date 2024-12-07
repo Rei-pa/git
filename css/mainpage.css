@@ -13,15 +13,20 @@ body{
 /* ------------ Top Nav ---------- */
 
 .header{
-    padding: 0 48px;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 4px 48px; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #605f4b;
+    background-color: #605f4b; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
     
 }
 .header-left{
@@ -72,6 +77,42 @@ body{
     color: #c4a37f;
 }
 
+/* 漢堡選單默認隱藏 */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #daded6;
+    flex: 1;
+}
+
+/* 當漢堡選單開啟時，切換成叉叉圖標 */
+.hamburger-menu.open i {
+    content: '\f00d'; /* Font Awesome "X" (叉叉) */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* 漢堡選單的垂直導航默認隱藏 */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 84px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #434233;
+    z-index: 2000;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
 /* ------------ Carousel ---------- */
 
 /*.owl-carousel .item h4 {
@@ -83,6 +124,7 @@ body{
     
 .owl-carousel{
     margin-bottom: 80px;
+
 }
 
 .owl-nav{
@@ -124,7 +166,6 @@ body{
     margin: 0 auto;
     letter-spacing: 0.8px;
 }
-  
 
 .content p{
     font-size: 18px;
@@ -302,7 +343,7 @@ body{
     padding: 60px 120px;
     max-width: 100%; 
     margin: 0 auto;
-    gap: 24px;
+    gap: 48px;
     height: 400px;
     
     
@@ -343,36 +384,37 @@ body{
 
 .product-list {
     display: flex; 
+    flex-wrap: wrap;
     gap: 20px; 
-    /* align-items: stretch;  */
     list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1200px;
     
 }
 
 .product-card{
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 480px;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: auto;
-    overflow: hidden;
-    flex: 1;
-    padding: 16px;
    
 }
 
 .img-container{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     aspect-ratio: 3 / 3;
     overflow: hidden;
     width: 100%; 
-    max-width: 480px;
-    min-width: 240px;
+
 }
       
 .img-container img {
     width: 100%; 
-    height: auto; 
+    height: 100%; 
     border-radius: 24px;
     object-fit: cover;
 }
@@ -498,12 +540,14 @@ body{
 
 .top .middle-section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
     
 }
 
 .middle-section h2{
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-weight: 500;
     font-size: 16px;
 }
@@ -511,10 +555,6 @@ body{
 .middle-section p{
     margin-bottom: 8px;
     font-size: 14px;
-}
-
-.address-block{
-    margin-bottom: 24px;
 }
 
 .right-section{
@@ -546,5 +586,6 @@ body{
     font-size: 14px;
     color: #e4ded2;
     padding: 8px 0;
+    line-height: 1.6;
 }
     

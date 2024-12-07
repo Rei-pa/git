@@ -13,15 +13,20 @@ body{
 /* ------------ Top Nav ---------- */
 
 .header{
-    padding: 0 48px;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 4px 48px; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #605f4b;
+    background-color: #605f4b; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
     
 }
 .header-left{
@@ -69,13 +74,49 @@ body{
     color: #c4a37f; /* 可選：添加懸停效果 */
 }
 
+/* 漢堡選單默認隱藏 */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #daded6;
+    flex: 1;
+}
+
+/* 當漢堡選單開啟時，切換成叉叉圖標 */
+.hamburger-menu.open i {
+    content: '\f00d'; /* Font Awesome "X" (叉叉) */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* 漢堡選單的垂直導航默認隱藏 */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 84px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #434233;
+    z-index: 2000;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
 /* ------------ Title + hero img ---------- */
 
 .hero-section{
     max-width: 100%;
     position: relative;
     height: 80vw;
-    margin: 0 auto;
+    margin: 180px auto 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -83,13 +124,9 @@ body{
 }
 
 .hero-section h2{
-    
     font-size: 64px;
     font-weight: bold;
-    top: 90px;
-    left: 110px;
     color: #434343;
-    margin-top: 60px;
     margin-left: 120px;
     
 }
@@ -360,12 +397,14 @@ body{
 
 .top .middle-section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
     
 }
 
 .middle-section h2{
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-weight: 500;
     font-size: 16px;
 }
@@ -375,27 +414,21 @@ body{
     font-size: 14px;
 }
 
-.address-block{
-    margin-bottom: 24px;
-}
-
-ul{
+.right-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
 }
 
-
-
-ul a{
+.right-section a{
     text-decoration: none;
     color:#e4ded2;
     transition: color 0.3s ease;
 
 }
 
-ul a:hover{
+.right-section a:hover{
     color:#c4a37f;
 
 }
@@ -410,5 +443,5 @@ ul a:hover{
     font-size: 14px;
     color: #e4ded2;
     padding: 8px 0;
+    line-height: 1.6;
 }
-  
