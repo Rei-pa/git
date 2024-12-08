@@ -274,14 +274,11 @@
 
     .address-block{
         margin-bottom: 12px;
+        text-align: center;
     }
     
     .hours-block{
         margin-bottom: 12px;
-    }
-
-    .address-block{
-        text-align: center;
     }
 
     .bottom p{

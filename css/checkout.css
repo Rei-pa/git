@@ -116,7 +116,7 @@ body{
 .checkout-page {
     display: flex;
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 160px auto 80px;
     gap: 20px;
 }
 

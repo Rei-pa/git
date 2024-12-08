@@ -68,7 +68,7 @@
                     <thead>
                     <tr>
                         <th>商品</th>
-                        <th>價格</th>
+                        <th class="table-price">價格</th>
                         <th>數量</th>
                         <th class="table-subtotal">小計</th>
                         <th></th>
@@ -79,7 +79,9 @@
                     <tbody id="cart-items">
                     <tr>
                         <td class="product-info">
-                            <img src="img/chopin.png" alt="Product 1">
+                            <a href="products.html?id=1" data-id="1">
+                                <img src="img/product1.jpeg" alt="Musician Series Chopin" class="product-image">
+                            </a>
                             <div>
                                 <p>哥斯大黎加 卡內特 音樂家系列 蕭邦</p>
                                 <p>Musician Series Chopin</p>
@@ -87,15 +89,25 @@
                         </td>
                         <td class="price">$720</td>
                         <td class="quantity">
-                            <input type="number" min="1" value="1" class="quantity-input">
-                        </td>
+                            <div class="quantity-control">
+                              <button class="btn-decrease">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input type="text" class="quantity-input" value="1" min="1">
+                              <button class="btn-increase">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                          </td>
                         <td class="subtotal">$720</td>
                          <td><i class="fa-solid fa-trash remove-btn"></i></td>
                     </tr>
 
                     <tr>
                         <td class="product-info">
-                            <img src="img/wangi.png" alt="Product 2">
+                            <a href="products.html?id=3" data-id="3">
+                                <img src="img/product3.jpeg" alt="Guji Uraga Solomo G1" class="product-image">
+                            </a>
                             <div>
                                 <p>肯亞 冽里 卡穆旺吉 AA TOP 水洗</p>
                                 <p>Kiamwangi AA Top</p>
@@ -103,7 +115,17 @@
                         </td>
                         <td class="price">$640</td>
                         <td class="quantity">
-                        <input type="number" min="1" value="1" class="quantity-input">
+                            <div class="quantity-control">
+                              <button class="btn-decrease">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input type="text" class="quantity-input" value="1" min="1">
+                              <button class="btn-increase">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
+                        </td>
+                        
                         </td>
                         <td class="subtotal">$640</td>
                         <td><i class="fa-solid fa-trash remove-btn"></i></td>
@@ -111,15 +133,13 @@
                     </tbody>
                 </table>
         
-                <textarea placeholder="如果有特殊需求或是需要磨成咖啡粉的服務，請留言告訴我們你慣用沖煮的器具，我們將會磨成適合的顆粒度。"></textarea>
+                <textarea placeholder="如果有特殊需求，請留言告訴我們。"></textarea>
                 <div class="cart-footer">
                 <p>總計<span id="total-price">$850</span></p>
                 
                 <div class="buttons">
                     <a class="btn continue-btn" href="onlineshop.html">繼續購物</a>
                     <a class="btn checkout-btn" href="checkout.html">結帳</a>
-                    <!-- <button class="btn continue-btn">繼續購物</button>
-                    <button class="btn checkout-btn">結帳</button> -->
                 </div>
             </div>
         </div>

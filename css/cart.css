@@ -127,21 +127,18 @@ body{
     font-weight: bold;
     text-align: center;
 }
-
+  
 table {
     width: 100%;
     border-collapse: collapse;
-    /* 相鄰的表格單元格會共用一條邊框，而不是每個單元格都有自己的獨立邊框，這樣表格看起來更整齊且不會有多餘的空隙。 */
     margin-bottom: 48px;
+
+
 }
 
 th, td{
     text-align: left;
     padding: 10px;
-    
-}
-
-td{
     vertical-align: middle;
 }
 
@@ -153,16 +150,18 @@ th {
     width: 100px;
 }
 
+
 .product-info {
     display: flex;
     align-items: center;
     vertical-align: middle;
     margin-top: 24px;
-   
+    
 }
 
 .product-info p{
     margin-bottom: 8px;
+    line-height: 1.4;
 }
 
 .product-info img {
@@ -180,17 +179,57 @@ th {
     font-size: 18px;
     font-weight: 500;
 }
+/* 數量控制容器 */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    width: 100px;
+  }
   
-.quantity-input {
-    width: 40px;
+  /* 按鈕樣式 */
+  .quantity-control button {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #605f4b;
+    background-color: #ffffff;
+    color: #605f4b;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* 去除按鈕的內邊距 */
+    flex-shrink: 0;
+  }
+  
+  .quantity-control button i {
+    font-size: 14px; /* 控制圖標大小 */
+  }
+  
+  .quantity-control button:hover {
+    background-color: #939850;
+    color: #ffffff;
+  }
+  
+  /* 數量輸入框 */
+  .quantity-input {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 16px;
     padding: 4px;
-    outline: 0;
-}
-
-.quantity-input:focus{
-    border: 2px solid #a67654;
-
-}
+    border: 0;
+  }
+  
+  .quantity-input:focus {
+    outline: none;
+    border-color: #a67654; /* 聚焦時的邊框顏色 */
+  }
+    
 
 .remove-btn {
     background: none;
@@ -201,7 +240,7 @@ th {
 }
 
 .remove-btn:hover{
-    color: rgb(251, 37, 37);
+    color: rgb(211, 74, 74);
 }
 
 textarea {
