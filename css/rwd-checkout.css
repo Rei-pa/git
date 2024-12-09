@@ -1,0 +1,156 @@
+/* 當頁面寬度小於 1000px 時 */
+@media (max-width: 1120px) {
+    .header-left{
+        display: none; 
+    }
+    
+    .hamburger-menu {
+        display: block;
+        transition: transform 0.3s ease;
+        font-size: 18px;
+    }
+
+    .hamburger-menu i:hover{
+        color: #c4a37f;
+        
+    }
+    
+    .mobile-nav.open {
+        display: flex; 
+        transform: translateX(0);
+    }
+    
+    .mobile-nav a {
+        color: #daded6;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 8px 0;
+        width: 100%;
+        text-align: left;
+        margin-right: 0px;
+    }
+    
+    .mobile-nav a:hover {
+        color: #c4a37f;
+    }
+
+    .overlay {
+        display: none; 
+        position: fixed;
+        top: 84px;
+        left: 670px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: opacity 0.3s ease;
+        z-index:20;
+    }
+
+    .overlay.open {
+        display: block;
+        opacity: 1;
+    }
+
+    .checkout-page {
+      margin: 160px 40px 80px;
+    }
+}
+
+@media (max-width: 820px) {
+    .checkout-page {
+        flex-direction: column;
+      }
+
+    .checkout-button {
+        position:static;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    
+    
+}
+@media (max-width: 600px) {
+
+    .header {
+        padding: 4px 16px;
+    }
+
+    .left-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom{
+        padding: 16px 80px;
+    }
+
+    
+}
+/* Mobile (width: 430px and below) */
+@media screen and (max-width: 430px) {
+    .faq-section {
+        padding: 24px 16px;
+    }
+
+    .faq-title {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    .main-section {
+        grid-template-columns: 1fr; /* 單欄排版 */
+        gap: 16px; /* 減少間距 */
+    }
+
+    .faq-image img {
+        border-radius: 16px; /* 圖片圓角稍微縮小 */
+    }
+
+    .faq-category h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    .faq-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 24px;
+    }
+
+    .top .left-section{
+        gap: 20px;
+    }
+    .top .middle-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .address-block{
+        margin-bottom: 12px;
+    }
+    
+    .hours-block{
+        margin-bottom: 12px;
+    }
+
+    .address-block{
+        text-align: center;
+    }
+
+    .bottom p{
+        line-height: 1.6;
+
+    }
+
+    .bottom{
+        padding: 16px 52px;
+    }
+}
