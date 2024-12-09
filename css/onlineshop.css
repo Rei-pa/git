@@ -34,12 +34,20 @@ body{
 
 }
 
-.header a{
+.header-left a{
     color: #daded6; 
     font-size: 16px; 
     transition: color 0.3s ease;
     text-decoration: none;
     margin-right: 16px;
+
+}
+
+.header-right a{
+    color: #daded6; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+    text-decoration: none;
 
 }
 
@@ -108,21 +116,6 @@ body{
     transition: transform 0.3s ease;
 }
 
-
-/* ------------ Carousel ---------- */
-
-.owl-theme .item {
-    height: 600px;
-    object-fit: cover;
-    
-  }
-  
-  .owl-carousel .item h4 {
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.4375rem;
-    margin-top: 0rem;
-  }
   
 /* ------------ Switch type (2types) + Item list  ---------- */
 
@@ -140,8 +133,8 @@ body{
 .shop-container h1{
     font-size: 64px;
     font-weight: bold;
-    color: #605f4b;
-    margin-top: 72px;
+    color: #434233;
+    margin-top: 100px;
     
 }
 
@@ -198,6 +191,10 @@ body{
     gap: 48px;
 }
 
+.shop-layout{
+    gap:24px;
+}
+
 .shop-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -246,7 +243,7 @@ body{
     position: relative;
 }
   
-.overlay {
+.img-overlay {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -258,7 +255,7 @@ body{
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: 1;
+    z-index: 50;
     border-radius: 16px;
 }
   

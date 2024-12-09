@@ -34,12 +34,20 @@ body{
 
 }
 
-.header a{
+.header-left a{
     color: #daded6; 
     font-size: 16px; 
     transition: color 0.3s ease;
     text-decoration: none;
     margin-right: 16px;
+
+}
+
+.header-right a{
+    color: #daded6; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+    text-decoration: none;
 
 }
 

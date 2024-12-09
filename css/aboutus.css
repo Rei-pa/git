@@ -1,8 +1,5 @@
 @import url(reset.css);
 
-/* carousel還沒做！！！！！！！ */
-/* h1 h2寫顛倒 */
-
 body{
     margin: 0 auto;
     background-color: #daded6;
@@ -36,12 +33,20 @@ body{
 
 }
 
-.header a{
+.header-left a{
     color: #daded6; 
     font-size: 16px; 
     transition: color 0.3s ease;
     text-decoration: none;
     margin-right: 16px;
+
+}
+
+.header-right a{
+    color: #daded6; 
+    font-size: 16px; 
+    transition: color 0.3s ease;
+    text-decoration: none;
 
 }
 
@@ -113,9 +118,10 @@ body{
 
 /* ------------ Carousel ---------- */
 
-.owl-theme{
-    margin-bottom: 80px;
+.owl-carousel{
+    margin-top: 80px;
 }
+
 .owl-theme .item {
     
     object-fit: cover;
@@ -312,6 +318,11 @@ body{
 .middle-section p{
     margin-bottom: 8px;
     font-size: 14px;
+}
+
+.phone{
+    text-decoration: none;
+    color: #daded6;
 }
 
 .right-section{

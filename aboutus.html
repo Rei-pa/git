@@ -8,10 +8,9 @@
 
     <!-- owl.carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    </link>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
@@ -79,9 +78,9 @@
             <div class="item">
               <img src="img/hero-img1.jpg" alt="">
             </div>
-            <div class="item">
+            <!-- <div class="item">
               <img src="img/hero-img3.png" alt="">
-            </div>
+            </div> -->
         </div>
         
         <!------------ Img + Text (Store intro) ---------->
@@ -148,7 +147,7 @@
             <div class="section">
                 <h1 class="section-title">聯絡方式</h1>
                 <div class="text">
-                <p>電話：0912345678</p>
+                <p class="phone">電話：0912345678</p>
                 <p>信箱：crankcoffee@gmail.com</p>
                 <p>如果有任何問題，隨時歡迎聯繫我們！</p>
                 </div>
@@ -171,7 +170,7 @@
                     <div class="address-block">
                     <h2>Address & Contact</h2>
                     <p>新北市林口區四維路369號</p>
-                    <p>0912345678</p>
+                    <p class="phone">0912345678</p>
                     </div>
                     <a href="https://www.instagram.com/" class="icons" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-instagram"></i>
@@ -190,5 +189,23 @@
     </div>
 
     <script src="js/aboutus.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            nav: true,
+            dots: true,
+            animateOut: 'animate__fadeOut',   // 使用淡出效果
+            animateIn: 'animate__fadeIn',     // 使用淡入效果
+            smartSpeed: 2000,
+        
+          });
+        });
+    </script>
 </body>
 </html>

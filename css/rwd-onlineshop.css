@@ -50,42 +50,65 @@
         display: block;
         opacity: 1;
     }
+
+    .shop-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        list-style: none;
+    
+    }
+
+    .shop-layout{
+        gap:24px;
+    }
+
+    .shop-tabs .tab {
+        width:120px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .shop-container {
+        padding: 40px 24px; /* 減少內邊距 */
+        gap: 80px;
+    }
 }
 
 /* Tablet (width: 820px and below) */
 @media screen and (max-width: 820px) {
     .shop-container {
-        padding: 40px 60px; /* 減少內邊距 */
-        gap: 48px;
+        padding: 40px 16px; 
+        gap: 60px;
     }
 
     .shop-container h1 {
-        font-size: 48px; /* 減小標題字體 */
+        font-size: 48px; 
         margin-top: 48px;
 
     }
 
-    /* 上半部Banner調整 */
-    .owl-theme .item {
-        height: 400px; /* 調整Banner高度 */
+  
+    /* .owl-theme .item {
+        height: 400px; 
     }
 
     .owl-carousel .item h4 {
-        font-size: 1.2rem; /* 縮小字體 */
-    }
+        font-size: 1.2rem; 
+    } */
 
     .shop-layout{
         flex-direction: column;
     }
     .shop-cards {
-        grid-template-columns: repeat(2, 1fr); /* 三列布局 */
-        gap: 20px; /* 減少間距 */
-        max-width: 100%; /* 滿版 */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        max-width: 100%; 
     }
 
     .shop-cards li {
-        padding: 16px; /* 減少卡片內邊距 */
-        border-radius: 16px; /* 減少圓角 */
+        padding: 16px; 
+        border-radius: 16px; 
         margin-bottom: 10px;
     }
 
@@ -96,19 +119,19 @@
     }
 
     .text-content h3 {
-        font-size: 14px; /* 調整產品名稱字體大小 */
-        height: 48px; /* 縮小高度 */
+        font-size: 14px; 
+        height: 48px; 
         
     }
 
     .text-content p {
-        font-size: 18px; /* 縮小價格字體 */
+        font-size: 18px; 
         margin-bottom: 12px;
     }
 
     .shop-button {
-        padding: 16px 12px; /* 減少按鈕內邊距 */
-        font-size: 16px; /* 調整字體大小 */
+        padding: 16px 12px; 
+        font-size: 16px; 
     
     }
 
@@ -133,6 +156,10 @@
 
 @media (max-width: 600px) {
 
+    .header {
+        padding: 4px 16px;
+    }
+
     .left-section{
         display: flex;
         flex-direction: column;
@@ -150,43 +177,44 @@
     }
 
     .shop-container h1 {
-        font-size: 36px; /* 繼續縮小標題字體 */
+        font-size: 36px; 
         margin-top: 24px;
     }
 
     /* 上半部Banner調整 */
-    .owl-theme .item {
-        height: 280px; /* 調整Banner高度 */
+    /* .owl-theme .item {
+        height: 280px; 
     }
 
     .owl-carousel .item h4 {
-        font-size: 1rem; /* 進一步縮小字體 */
-    }
+        font-size: 1rem; 
+    } */
 
 
     .shop-cards {
         grid-template-columns: repeat(1, 1fr); 
-        gap: 12px; /* 減少間距 */
-        max-width: 100%; /* 滿版 */
+        gap: 12px; 
+        max-width: 100%;
+        padding: 16px;
     }
 
     .shop-cards li {
-        padding: 12px; /* 減少卡片內邊距 */
-        border-radius: 12px; /* 減少圓角 */
+        padding: 12px; 
+        border-radius: 12px; 
     }
 
     .text-content h3 {
-        font-size: 12px; /* 縮小產品名稱字體 */
-        height: 40px; /* 縮小高度 */
+        font-size: 12px; 
+        height: 40px; 
     }
 
     .text-content p {
-        font-size: 16px; /* 縮小價格字體 */
+        font-size: 16px; 
     }
 
     .shop-button {
-        padding: 16px 8px; /* 縮小按鈕 */
-        font-size: 12px; /* 調整字體大小 */
+        padding: 16px 8px; 
+        font-size: 12px; 
     }
 
     .card-title1, .card-title2 {
