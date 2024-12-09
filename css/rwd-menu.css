@@ -128,7 +128,7 @@
     }
   
     .menu-tabs {
-      position: static;
+      top: 120px;
       margin-bottom: 20px;
       width: 180px;
       

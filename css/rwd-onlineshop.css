@@ -1,11 +1,17 @@
+@media screen and (max-width: 1300px) {
+    .shop-container {
+        padding: 40px 24px; 
+        gap: 80px;
+    }
+}
 /* 當頁面寬度小於 1000px 時 */
 @media (max-width: 1120px) {
     .header-left{
-        display: none; /* 隱藏原本的水平選單 */
+        display: none; 
     }
     
     .hamburger-menu {
-        display: block; /* 顯示漢堡選單按鈕 */
+        display: block; 
         transition: transform 0.3s ease;
         font-size: 18px;
     }
@@ -16,8 +22,8 @@
     }
     
     .mobile-nav.open {
-        display: flex; /* 顯示垂直選單 */
-        transform: translateX(0); /* 垂直選單滑出效果 */
+        display: flex;
+        transform: translateX(0); 
     }
     
     .mobile-nav a {
@@ -68,12 +74,6 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .shop-container {
-        padding: 40px 24px; /* 減少內邊距 */
-        gap: 80px;
-    }
-}
 
 /* Tablet (width: 820px and below) */
 @media screen and (max-width: 820px) {

@@ -240,7 +240,7 @@ body{
 
 .menu-tabs{
     position: sticky; 
-    top: 50px; 
+    top: 140px; 
     align-self: flex-start; 
     z-index: 10; 
     background-color: inherit; 
